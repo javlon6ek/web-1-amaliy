@@ -1,1 +1,2 @@
-# web-1-amaliy
+web 1 Amaliy 
+HTML VA CSS kod yozish
