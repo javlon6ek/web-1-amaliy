@@ -1,0 +1,196 @@
+/* ==========================================
+   Oltin Qaychi sartaroshxonasi — style.css
+   Palitra: to'q ko'k, och kulrang-ko'k, amber, oq
+   ========================================== */
+
+/* ---------- Rang o'zgaruvchilari ---------- */
+:root {
+  --asosiy: #1f3a5f;   /* to'q ko'k: sarlavha, matn */
+  --fon: #eef2f6;      /* sahifa foni */
+  --aksent: #8a5a00;   /* amber: hover, ta'kid */
+  --oq: white;         /* sarlavha foni ustidagi matn */
+}
+
+/* ---------- Umumiy (sahifa) ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fon);
+  color: var(--asosiy);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Asosiy mazmun: katta ekranda markazda, telefonda to'liq kenglikda */
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+/* ---------- Sahifa boshi ---------- */
+header {
+  background-color: #1f3a5f;
+  color: var(--oq);
+  padding: 24px 20px 16px;
+}
+
+header > * {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Sarlavhalar ---------- */
+h1 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: clamp(1.7rem, 6vw, 2.6rem);
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: white;
+}
+
+h2, h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  line-height: 1.3;
+  color: var(--asosiy);
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ---------- Matn ---------- */
+p {
+  text-align: left;
+}
+
+.izoh {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+strong {
+  font-weight: 700;
+}
+
+mark {
+  background-color: rgba(138, 90, 0, 0.2);
+  color: var(--asosiy);
+}
+
+abbr {
+  text-decoration: underline dotted;
+}
+
+blockquote {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--aksent);
+}
+
+/* ---------- Ro'yxatlar ---------- */
+dt {
+  font-weight: 700;
+}
+
+dd {
+  font-style: italic;
+}
+
+/* ---------- Navigatsiya ---------- */
+nav ul {
+  list-style: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 18px 4px 0;
+}
+
+nav a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ---------- Havolalar ---------- */
+a {
+  color: #1f3a5f;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgba(31, 58, 95, 0.7);
+}
+
+a:hover {
+  color: var(--aksent);
+  text-decoration: none;
+}
+
+/* ---------- Aloqa bo'limi ---------- */
+#aloqa {
+  font-size: 1.05rem;
+}
+
+/* ---------- Sahifa oxiri ---------- */
+footer {
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Moslashuvchanlik ---------- */
+img, table {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
